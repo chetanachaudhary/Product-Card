@@ -15,7 +15,7 @@ function changeColor() {
     let gradient = document.querySelector(`.gradient[color="${color}]`)
 
     colors.forEach(change => change.classList.remove('active'));
-    this.classListadd('active');
+    this.classList.add('active');
 
     document.documentElement.style.setProperty('--primary', primary);
     tshirts.forEach(t => t.classList.remove('show'));
